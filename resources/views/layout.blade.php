@@ -12,9 +12,9 @@
 
     <body>
         <div id="application">
-            {{--<nav class="fixed-nav-bar">--}}
-                {{--<img id="topbar" class="img-top-bar" src="assets/img/topbar.jpg" alt=""/>--}}
-            {{--</nav>--}}
+            <nav class="fixed-nav-bar">
+                <img id="topbar" class="img-top-bar" src="assets/img/topbar.jpg" alt=""/>
+            </nav>
 
             @yield('content')
         </div>
