@@ -1,9 +1,9 @@
 @extends('layout')
 
 @section('content')
-    {{--<div class="spinner">--}}
-        {{--<i class="fa fa-spinner fa-pulse"></i>--}}
-    {{--</div>--}}
+    <div class="spinner">
+        <i class="fa fa-spinner fa-pulse"></i>
+    </div>
 
     <div id="imagemap">
         <img class="main" src="/assets/img/aloalerj.jpg" usemap="#links"/>
