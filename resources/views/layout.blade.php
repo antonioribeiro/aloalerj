@@ -13,7 +13,11 @@
     <body>
         @yield('content')
 
-        <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script>jQuery.noConflict();</script>
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script>
+        <script type="text/javascript" src="assets/packages/zepto-page-transitions/min/transition.min.js"></script>
         <script src="assets/js/app.js"></script>
     </body>
 </html>

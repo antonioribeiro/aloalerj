@@ -10,7 +10,8 @@
 
         <a href="{!! url('find') !!}" class="link" id="home-loupe"></a>
         <a class="link" id="home-menu"></a>
-        <a class="link" id="home-alo"></a>
+        <a transition="slide" class="link" id="home-alo" href="{!! url('find') !!}"></a>
+
         <a class="link" id="home-phone"></a>
         <a class="link" id="home-chat"></a>
         <a class="link" id="home-audio"></a>
@@ -147,5 +148,6 @@
         <br>
         <br>
         <br>
+        <a transition="slide" href="simple2.html">Flip to page two</a>
     </div>
 @stop

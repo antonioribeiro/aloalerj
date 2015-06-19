@@ -8,15 +8,23 @@ new Vue(
 
     methods:
     {
+        page: function(pageName)
+        {
+            $.get(pageName, function( data )
+            {
+                console.log(data);
+            });
+        },
+
         onClick: function (e)
         {
             if ( ! this.showing)
             {
-                $(".link").addClass("showButton");
+                jQuery(".link").addClass("showButton");
             }
             else
             {
-                $(".link").removeClass("showButton");
+                jQuery(".link").removeClass("showButton");
             }
 
             this.showing = ! this.showing;
@@ -24,7 +32,7 @@ new Vue(
     }
 });
 
-$(document).ready(function()
+jQuery(document).ready(function()
 {
     var name = window.location.pathname.substr(1, 1000);
 
@@ -33,7 +41,7 @@ $(document).ready(function()
         name = 'home';
     }
 
-    $("body").css("background-image", 'url("/assets/img/'+name+'.jpg")');
+    jQuery("body").css("background-image", 'url("/assets/img/'+name+'.jpg")');
 });
 
 
