@@ -2,6 +2,10 @@
 
 @section('content')
     <div id="application">
+        <nav class="fixed-nav-bar">
+            <img id="topbar" class="img-top-bar" src="assets/img/topbar.jpg" alt=""/>
+        </nav>
+
         <div class="link" id="home-logo" v-on="click: onClick"></div>
 
         <a href="{!! url('find') !!}" class="link" id="home-loupe"></a>
