@@ -56,6 +56,11 @@ i.fa-spinner {
     background-color: #ac2925;
 }
 
+area {
+    background-color: #ac2925;
+    opacity: 0.5;
+}
+
 .fixed-nav-bar {
     position: fixed;
     top: 0;
