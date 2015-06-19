@@ -8,16 +8,12 @@
         <link rel="stylesheet" href="assets/css/main.css"/>
 
         <script src="http://cdnjs.cloudflare.com/ajax/libs/vue/0.12.1/vue.min.js"></script>
-
-        <script src="assets/js/app.js"></script>
     </head>
 
     <body>
         <div id="application">
 
-            <div class="link" id="home-logo">
-                <a v-on="click: onClick"><h1><?php echo e(heading); ?></h1></a>
-            </div>
+            <div class="link" id="home-logo" v-on="click: onClick"></div>
 
             <div class="link" id="home-loupe"></div>
             <div class="link" id="home-menu"></div>
@@ -36,5 +32,8 @@
             <div class="link" id="home-alerj"></div>
             <div class="link" id="home-transparency"></div>
         </div>
+
+        <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="assets/js/app.js"></script>
     </body>
 </html>
