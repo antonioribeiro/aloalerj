@@ -31,7 +31,7 @@ new Vue(
         }
     }
 });
-//
+
 //jQuery(document).ready(function()
 //{
 //    var name = window.location.pathname.substr(1, 1000);
