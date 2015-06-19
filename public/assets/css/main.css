@@ -9,7 +9,7 @@ body {
     display: table;
     font-weight: 100;
     font-family: 'Lato';
-    background-image: url("/assets/img/home.jpg");
+    /* background-image: url("/assets/img/home.jpg"); */
     background-repeat: no-repeat;
     background-size: 100% auto;
 }
