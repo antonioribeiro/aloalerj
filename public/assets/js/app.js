@@ -24,3 +24,4 @@ new Vue(
     }
 });
 
+$(".link").addClass("showButton");

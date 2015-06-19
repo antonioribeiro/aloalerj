@@ -5,15 +5,13 @@ html, body {
 body {
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 1538px;
     color: #B0BEC5;
     display: table;
     font-weight: 100;
     font-family: 'Lato';
     background-image: url("/assets/img/home.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% auto;
 }
 
 .container {
@@ -42,9 +40,9 @@ body {
 
 #home-logo {
     position: absolute;
-    top: 20px;
-    left: 20px;
-    height: 75px;
+    top: 25px;
+    left: 50px;
+    height: 120px;
     width: 235px;
     opacity: 0.5;
 }
