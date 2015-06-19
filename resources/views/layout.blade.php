@@ -4,7 +4,7 @@
         <title>ALERJ</title>
 
         <link href='//fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
-
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="assets/css/main.css"/>
 
         <script src="http://cdnjs.cloudflare.com/ajax/libs/vue/0.12.1/vue.min.js"></script>
@@ -12,9 +12,9 @@
 
     <body>
         <div id="application">
-            <nav class="fixed-nav-bar">
-                <img id="topbar" class="img-top-bar" src="assets/img/topbar.jpg" alt=""/>
-            </nav>
+            {{--<nav class="fixed-nav-bar">--}}
+                {{--<img id="topbar" class="img-top-bar" src="assets/img/topbar.jpg" alt=""/>--}}
+            {{--</nav>--}}
 
             @yield('content')
         </div>

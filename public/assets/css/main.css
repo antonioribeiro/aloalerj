@@ -5,7 +5,7 @@ html, body {
 body {
     margin: 0;
     padding: 0;
-    color: #B0BEC5;
+    color: #000000;
     display: table;
     font-weight: 100;
     font-family: 'Lato';
@@ -14,8 +14,22 @@ body {
     background-size: 100% auto;
 }
 
-.photoshop-table {
-    width: 100%;
+img {
+    width: 980px;
+}
+
+.spinner {
+    height: 179px;
+    vertical-align: bottom;
+    text-align: center;
+    position: relative;
+}
+
+i.fa-spinner {
+    font-size: 60px;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
 }
 
 .container {
