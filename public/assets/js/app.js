@@ -52,8 +52,6 @@ var vue = new Vue(
 //    jQuery("body").css("background-image", 'url("/assets/img/'+currentPage+'.jpg")');
 //});
 
-jQuery(".hiddenLink").addClass("showButton");
-
 if (jQuery('meta[name=animated]').attr("content") == "false")
 {
     jQuery('html, body').animate(

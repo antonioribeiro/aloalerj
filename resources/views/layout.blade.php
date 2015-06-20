@@ -36,6 +36,11 @@
 
         <script>
             @yield('javascript')
+
+            if ({!! env('APP_DEBUG') !!})
+            {
+                jQuery(".hiddenLink").addClass("showButton");
+            }
         </script>
 
     </body>
