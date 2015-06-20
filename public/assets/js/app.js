@@ -20,11 +20,11 @@ new Vue(
         {
             if ( ! this.showing)
             {
-                jQuery(".link").addClass("showButton");
+                jQuery(".hiddenLink").addClass("showButton");
             }
             else
             {
-                jQuery(".link").removeClass("showButton");
+                jQuery(".hiddenLink").removeClass("showButton");
             }
 
             this.showing = ! this.showing;
@@ -44,4 +44,12 @@ new Vue(
 //    jQuery("body").css("background-image", 'url("/assets/img/'+name+'.jpg")');
 //});
 
+//jQuery(".hiddenLink").addClass("showButton");
 
+jQuery('html, body').animate({
+    scrollTop: 1600
+}, 2500, function() {
+    jQuery('html, body').animate({
+        scrollTop: 0
+    }, 800)
+});
