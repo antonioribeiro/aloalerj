@@ -17,7 +17,7 @@
             <nav class="header">
                 <img id="topbar" class="img-top-bar" src="/assets/img/topbar.jpg" alt=""/>
                 <a class="hiddenLink" style="top: 25px; left: 40px; height: 120px; width: 350px;" href="{!! url('/') !!}"></a>
-                <div class="hiddenLink" v-on="click: onClick" style="top: 25px; left: 480px; height: 120px; width: 150px;"></div>
+                <div class="hiddenLink" v-on="click: toggleDebug" style="top: 25px; left: 480px; height: 120px; width: 150px;"></div>
                 <a class="hiddenLink" style="top: 45px; left: 705px; height: 90px; width: 97px;" href="{!! url('find') !!}"></a>
                 <a class="hiddenLink" style="top: 45px; left: 842px; height: 93px; width: 94px;"></a>
             </nav>
@@ -39,7 +39,7 @@
 
             if ({!! env('APP_DEBUG') !!})
             {
-                jQuery(".hiddenLink").addClass("showButton");
+                toggleDebug();
             }
         </script>
 

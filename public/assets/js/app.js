@@ -24,7 +24,7 @@ var vue = new Vue(
             history.go(-1);
         },
 
-        onClick: function (e)
+        toggleDebug: function ()
         {
             if ( ! this.showing)
             {
@@ -72,4 +72,9 @@ function hideHeader()
 {
     jQuery('.header').hide();
     jQuery('.spinner').hide();
+}
+
+function toggleDebug()
+{
+    vue.toggleDebug();
 }
