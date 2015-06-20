@@ -9,5 +9,5 @@
         <img class="main" src="/assets/img/audio/GravacaoAudio_01.jpg" />
     </div>
 
-    <a class="hiddenLink" style="top: 1050px; left: 380px; height: 230px; width: 220px;" href="{!! url('chat/message') !!}"></a>
+    <a class="hiddenLink" style="top: 650px; left: 320px; height: 300px; width: 340px;" href="{!! url('audio/record') !!}"></a>
 @stop

@@ -78,3 +78,20 @@ function toggleDebug()
 {
     vue.toggleDebug();
 }
+
+function watchScroll()
+{
+    jQuery(window).scroll(function()
+    {
+        if (jQuery(this).scrollTop() == 0)
+        {
+            jQuery("#header").removeClass("shadow");
+        }
+        else
+        {
+            jQuery("#header").addClass("shadow");
+        }
+    });
+}
+
+watchScroll();
