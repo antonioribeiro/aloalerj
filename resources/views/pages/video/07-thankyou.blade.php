@@ -6,10 +6,10 @@
     </div>
 
     <div class="background">
-        <img class="main" src="/assets/img/chat/chat_02.jpg" />
+        <img class="main" src="/assets/img/video/video_07.jpg" />
     </div>
 
-    <a class="hiddenLink" style="top: 20px; left: 445px; height: 60px; width: 90px;" href="{!! url('chat/messageWithHeader') !!}"></a>
+    <a class="hiddenLink" style="top: 650px; left: 320px; height: 300px; width: 340px;" href="{!! url('/') !!}"></a>
 @stop
 
 @section('javascript')

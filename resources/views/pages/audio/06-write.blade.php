@@ -14,6 +14,5 @@
 @stop
 
 @section('javascript')
-    console.log('header');
     hideHeader();
 @stop
