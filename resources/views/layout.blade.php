@@ -14,13 +14,13 @@
 
     <body>
         <div id="application">
-            <nav class="fixed-nav-bar">
+            <nav class="header">
                 <img id="topbar" class="img-top-bar" src="/assets/img/topbar.jpg" alt=""/>
+                <a class="hiddenLink" style="top: 25px; left: 40px; height: 120px; width: 350px;" href="{!! url('/') !!}"></a>
+                <div class="hiddenLink" v-on="click: onClick" style="top: 25px; left: 480px; height: 120px; width: 150px;"></div>
+                <a class="hiddenLink" style="top: 45px; left: 705px; height: 90px; width: 97px;" href="{!! url('find') !!}"></a>
+                <a class="hiddenLink" style="top: 45px; left: 842px; height: 93px; width: 94px;"></a>
             </nav>
-
-            <div class="hiddenLink" id="home-logo" v-on="click: onClick" style="top: 25px; left: 40px; height: 120px; width: 350px;"></div>
-            <a class="hiddenLink" id="home-loupe" style="top: 45px; left: 705px; height: 90px; width: 97px;" href="{!! url('find') !!}"></a>
-            <a class="hiddenLink" id="home-menu" style="top: 45px; left: 842px; height: 93px; width: 94px;"></a>
 
             <div class="content">
                 @yield('content')
@@ -33,5 +33,10 @@
         {{--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script>--}}
         {{--<script type="text/javascript" src="assets/packages/zepto-page-transitions/min/transition.min.js"></script>--}}
         <script src="/assets/js/app.js"></script>
+
+        <script>
+            @yield('javascript')
+        </script>
+
     </body>
 </html>
