@@ -2,7 +2,11 @@
 
 Route::get('/', function ()
 {
-    return view('home');
+    $home = view('home')->render();
+
+	session(['animated' => 'true']);
+
+	return $home;
 });
 
 Route::get('{page}/{subpage?}', function ($page, $subpage = null)

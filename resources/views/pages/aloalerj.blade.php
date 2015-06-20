@@ -5,7 +5,9 @@
         <i class="fa fa-spinner fa-pulse"></i>
     </div>
 
-    <img class="main" src="/assets/img/aloalerj.jpg" />
+    <div class="background">
+        <img class="main" src="/assets/img/aloalerj.jpg" />
+    </div>
 
     <a class="hiddenLink" id="disque-aloalerj" style="top: 180px; left: 0px; height: 160px; width: 980px;" href="{!! url('disque/aloalerj') !!}"></a>
     <a class="hiddenLink" id="disque-crianca" style="top: 340px; left: 0px; height: 160px; width: 980px;" href="{!! url('disque/crianca') !!}"></a>

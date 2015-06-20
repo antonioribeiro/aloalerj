@@ -1,6 +1,7 @@
 var currentPage = window.location.pathname.substr(1, 1000);
+var alreadyAnimated = false;
 
-new Vue(
+var vue = new Vue(
 {
     el: '#application',
 
@@ -16,6 +17,11 @@ new Vue(
             {
                 console.log(data);
             });
+        },
+
+        back: function()
+        {
+            history.go(-1);
         },
 
         onClick: function (e)
@@ -46,9 +52,9 @@ new Vue(
 //    jQuery("body").css("background-image", 'url("/assets/img/'+currentPage+'.jpg")');
 //});
 
-jQuery(".hiddenLink").addClass("showButton");
+//jQuery(".hiddenLink").addClass("showButton");
 
-if (['home', 'aloalerj'].indexOf(currentPage) >= 0)
+if (jQuery('meta[name=animated]').attr("content") == "false")
 {
     jQuery('html, body').animate(
     {
@@ -60,4 +66,6 @@ if (['home', 'aloalerj'].indexOf(currentPage) >= 0)
             scrollTop: 0
         }, 800);
     });
+
+    alreadyAnimated = true;
 }

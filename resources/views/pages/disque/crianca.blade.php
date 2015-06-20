@@ -5,7 +5,7 @@
         <i class="fa fa-spinner fa-pulse"></i>
     </div>
 
-    <img class="main" src="{!! url('/assets/img/disque/aloAlerj.jpg') !!}" />
+    <img class="main" src="{!! url('/assets/img/disque/crianca.jpg') !!}" />
 
     <div class="hiddenLink" id="disque-aloalerj" style="top: 180px; left: 10px; height: 160px; width: 100px;" v-on="click: back()"></div>
 @stop
