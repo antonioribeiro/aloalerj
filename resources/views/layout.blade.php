@@ -37,7 +37,7 @@
         <script>
             @yield('javascript')
 
-            if ({!! env('APP_DEBUG') or false !!})
+            if ({!! env('APP_DEBUG') == null ? 'false' : env('APP_DEBUG') !!})
             {
                 toggleDebug();
             }
