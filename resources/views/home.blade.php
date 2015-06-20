@@ -7,10 +7,6 @@
 
     <img class="main" src="/assets/img/home.jpg"/>
 
-    <div class="hiddenLink" id="home-logo" v-on="click: onClick" style="top: 25px; left: 40px; height: 120px; width: 350px;"></div>
-
-    <a class="hiddenLink" id="home-loupe" style="top: 45px; left: 705px; height: 90px; width: 97px;" href="{!! url('find') !!}"></a>
-    <a class="hiddenLink" id="home-menu" style="top: 45px; left: 842px; height: 93px; width: 94px;"></a>
     <a class="hiddenLink" id="home-alo" style="top: 300px; left: 137px; height: 490px; width: 735px;" href="{!! url('find') !!}"></a>
     <a class="hiddenLink" id="home-phone" style="top: 1052px; left: 20px; height: 107px; width: 107px;" href="{!! url('aloalerj') !!}"></a>
     <a class="hiddenLink" id="home-chat" style="top: 1052px; left: 153px; height: 107px; width: 107px;"></a>

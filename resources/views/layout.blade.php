@@ -5,7 +5,7 @@
 
         <link href='//fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="assets/css/main.css"/>
+        <link rel="stylesheet" href="/assets/css/main.css"/>
 
         <script src="http://cdnjs.cloudflare.com/ajax/libs/vue/0.12.1/vue.min.js"></script>
     </head>
@@ -13,8 +13,12 @@
     <body>
         <div id="application">
             <nav class="fixed-nav-bar">
-                <img id="topbar" class="img-top-bar" src="assets/img/topbar.jpg" alt=""/>
+                <img id="topbar" class="img-top-bar" src="/assets/img/topbar.jpg" alt=""/>
             </nav>
+
+            <div class="hiddenLink" id="home-logo" v-on="click: onClick" style="top: 25px; left: 40px; height: 120px; width: 350px;"></div>
+            <a class="hiddenLink" id="home-loupe" style="top: 45px; left: 705px; height: 90px; width: 97px;" href="{!! url('find') !!}"></a>
+            <a class="hiddenLink" id="home-menu" style="top: 45px; left: 842px; height: 93px; width: 94px;"></a>
 
             <div class="content">
                 @yield('content')
@@ -26,6 +30,6 @@
 
         {{--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script>--}}
         {{--<script type="text/javascript" src="assets/packages/zepto-page-transitions/min/transition.min.js"></script>--}}
-        <script src="assets/js/app.js"></script>
+        <script src="/assets/js/app.js"></script>
     </body>
 </html>

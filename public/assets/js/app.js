@@ -1,3 +1,5 @@
+var currentPage = window.location.pathname.substr(1, 1000);
+
 new Vue(
 {
     el: '#application',
@@ -34,22 +36,28 @@ new Vue(
 
 //jQuery(document).ready(function()
 //{
-//    var name = window.location.pathname.substr(1, 1000);
 //
-//    if ( ! name)
+//
+//    if ( ! currentPage)
 //    {
-//        name = 'home';
+//        currentPage = 'home';
 //    }
 //
-//    jQuery("body").css("background-image", 'url("/assets/img/'+name+'.jpg")');
+//    jQuery("body").css("background-image", 'url("/assets/img/'+currentPage+'.jpg")');
 //});
 
-//jQuery(".hiddenLink").addClass("showButton");
+jQuery(".hiddenLink").addClass("showButton");
 
-jQuery('html, body').animate({
-    scrollTop: 1600
-}, 2500, function() {
-    jQuery('html, body').animate({
-        scrollTop: 0
-    }, 800)
-});
+if (['home', 'aloalerj'].indexOf(currentPage) >= 0)
+{
+    jQuery('html, body').animate(
+    {
+        scrollTop: 3500
+    }, 2500, function()
+    {
+        jQuery('html, body').animate(
+        {
+            scrollTop: 0
+        }, 800);
+    });
+}

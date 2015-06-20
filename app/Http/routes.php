@@ -5,7 +5,7 @@ Route::get('/', function ()
     return view('home');
 });
 
-Route::get('{page}', function ($page)
+Route::get('{page}/{subpage?}', function ($page, $subpage = null)
 {
-	return view('pages.'.$page);
+	return view('pages.'.$page . ($subpage ? ".$subpage" : ''));
 });
