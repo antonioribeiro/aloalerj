@@ -8,6 +8,11 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="/assets/css/main.css"/>
 
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/img/apple-icon-57x57.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/img/apple-icon-72x72.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/img/apple-icon-114x114.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/img/apple-icon-144x144.png" />
+
         <script src="http://cdnjs.cloudflare.com/ajax/libs/vue/0.12.1/vue.min.js"></script>
     </head>
 
