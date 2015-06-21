@@ -9,18 +9,6 @@
         <img class="main" src="/assets/img/mensagem/mensagem-01.jpg" />
     </div>
 
-    <input
-        id="ex1"
-        data-slider-id='ex1Slider'
-        type="text"
-        data-slider-min="0"
-        data-slider-max="200"
-        data-slider-step="1"
-        data-slider-value="14"
-        data-slider-handle="custom"
-    />
-@stop
-
-@section('javascript')
-    jQuery('#ex1').slider({});
+    <span id="badgeHome" class="badge" v-show="badge" style="top: 370px; left: 160px;">@{{ badge }}</span>
+    <a class="hiddenLink" style="top: 340px; left: 1px; height: 1000px; width: 980px;" href="{!! url('mensagem/02-mensagem') !!}"></a>
 @stop
