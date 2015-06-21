@@ -5,9 +5,11 @@
 
         <meta name="animated" content="{{ session('animated', 'false') }}">
 
+        <link rel="stylesheet" href="/assets/css/bootstrap-slider.min.css"/>
         <link href='//fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="/assets/css/main.css"/>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 
         <script src="http://cdnjs.cloudflare.com/ajax/libs/vue/0.12.1/vue.min.js"></script>
     </head>
@@ -30,10 +32,12 @@
 
         <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script>jQuery.noConflict();</script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
         {{--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script>--}}
         {{--<script type="text/javascript" src="assets/packages/zepto-page-transitions/min/transition.min.js"></script>--}}
         <script src="/assets/js/app.js"></script>
+        <script src="/assets/js/bootstrap-slider.min.js"></script>
 
         <script>
             @yield('javascript')

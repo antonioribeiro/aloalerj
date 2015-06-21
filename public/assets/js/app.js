@@ -8,7 +8,7 @@ var vue = new Vue(
     data: {
         showing: false,
         badge: 0,
-        badgeTimeout: 4000
+        badgeTimeout: 6000
     },
 
     ready:  function()
