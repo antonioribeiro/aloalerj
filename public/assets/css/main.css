@@ -54,7 +54,7 @@ i.fa-spinner {
 }
 
 .showButton {
-    background-color: #ac2925;
+    background: rgba(255, 40, 35, 0.5);
 }
 
 area {
@@ -87,6 +87,19 @@ area {
 
 .hiddenLink {
     position: absolute;
-    opacity: 0.5;
     z-index: 3;
 }
+
+.badge {
+    position: absolute;
+    top:-5px;
+    padding: 9px 23px;
+    border-radius:100px;
+    background: #fc0102;
+    font:bold 2.5em "Helvetica Neue", sans-serif;
+    color: white;
+    text-decoration: none;
+    opacity: 1 !important;
+}
+
+

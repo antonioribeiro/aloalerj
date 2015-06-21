@@ -6,7 +6,14 @@ var vue = new Vue(
     el: '#application',
 
     data: {
-        showing: false
+        showing: false,
+        badge: 0,
+        badgeTimeout: 3000,
+    },
+
+    ready:  function()
+    {
+        this.setBadgeTimeout();
     },
 
     methods:
@@ -17,6 +24,20 @@ var vue = new Vue(
             {
                 console.log(data);
             });
+        },
+
+        updateBadge: function()
+        {
+            this.badge = this.badge+1;
+
+            this.setBadgeTimeout();
+
+            console.log(this.badge);
+        },
+
+        setBadgeTimeout: function()
+        {
+            setTimeout(function() { this.vue.updateBadge() }, this.badgeTimeout);
         },
 
         back: function()
