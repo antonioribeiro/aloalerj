@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>ALERJ</title>
+        <title>Alô Alerj</title>
 
         <meta name="animated" content="{{ session('animated', 'false') }}">
 
